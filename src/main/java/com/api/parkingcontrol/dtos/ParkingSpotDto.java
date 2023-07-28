@@ -27,6 +27,9 @@ public class ParkingSpotDto {
     @NotBlank
     private String apartment;
 
+    @NotBlank
+    private String block;
+
 
     public String getParkingSpotNumber() {
         return this.parkingSpotNumber;
@@ -82,6 +85,14 @@ public class ParkingSpotDto {
 
     public void setApartment(String apartment) {
         this.apartment = apartment;
+    }
+
+    public String getBlock() {
+        return this.block;
+    }
+
+    public void setBlock(String block) {
+        this.block = block;
     }
 
 }
